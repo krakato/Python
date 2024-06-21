@@ -7,7 +7,7 @@ def generar_combinaciones_loteria():
     
     # Generar todas las combinaciones posibles de 6 números
     todas_combinaciones = itertools.combinations(numeros, 6)
-    
+    #Seleccionamos entre un rango de suma de 130 a 140
     for combinacion in todas_combinaciones:
         suma_combinacion = sum(combinacion)
         if 130 < suma_combinacion < 140:
