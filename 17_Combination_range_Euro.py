@@ -1,7 +1,7 @@
 import itertools
 import random
 
-def generar_combinaciones_loteria():
+def generar_combinaciones_Euromillon():
     numeros = list(range(1, 51))  # Números de la lotería primitiva
     
 
@@ -25,6 +25,6 @@ def generar_combinaciones_loteria():
     return combinaciones_seleccionadas
 
 # Ejemplo de uso
-resultados = generar_combinaciones_loteria()
+resultados = generar_combinaciones_Euromillon()
 for combinacion in resultados:
     print(f"Combinación: {combinacion}")
