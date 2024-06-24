@@ -14,7 +14,8 @@ def generar_combinaciones_Euromillon():
         suma_combinacion = sum(combinacion)
         if 130 < suma_combinacion < 140:
             estrellas = random.sample(range(1, 13), 2)
-            combinaciones_validas.append((combinacion, estrellas))
+            #combinaciones_validas.append((combinacion, estrellas))
+            combinaciones_validas.append(f"Combinación: {combinacion} Estrellas: {estrellas}  Sumas: {suma_combinacion}")
 
     # Seleccionar aleatoriamente 5 combinaciones de las válidas
     if len(combinaciones_validas) >= 8:
